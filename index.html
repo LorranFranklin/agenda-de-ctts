@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/98d7cb019f.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./img/agenda.ico" type="image/ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Contatos</title>
+</head>
+<body>
+  <header>
+    <img src="./img/Agenda.png" alt="">
+    <h1>Sua Agenda de Contatos Virtual</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <form id="form-agenda">
+      <div class="form-container">
+        <h2>
+          <i class="fa-solid fa-address-book"></i>
+          Adicione agora o seu contato
+        </h2>
+
+        <div class="input-container">
+          <input type="text" id="nome" placeholder="Nome" required>
+          <input type="tel" id="tel" placeholder="Telefone" required>
+          <input type="email" id="email" placeholder="E-mail">
+          <button type="submit"><i class="fa-solid fa-address-book"></i>Adicionar</button>
+        </div>
+      </div>
+    </form>
+
+    <table cellspacing="0" class="table-container">
+      <thead>
+        <tr>
+          <th><i class="fa-solid fa-user"></i>Nome</th>
+          <th><i class="fa-solid fa-phone"></i>Telefone</th>
+          <th><i class="fa-solid fa-envelope"></i>E-mail</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>Copyright &copy; 2024 - Agenda de Contatos <span></span></p>
+    </div>
+  </footer>
+</body>
+</html>
