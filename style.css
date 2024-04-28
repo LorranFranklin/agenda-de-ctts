@@ -232,3 +232,36 @@ footer {
   }
   
 }
+
+@media (max-width: 660px) {
+  header {
+    justify-content: space-between;
+  }
+  header img {
+    height: 50px;
+  }
+  h1 {
+    display: none;
+  }
+  .form-container h2 {
+    font-size: 1.4rem;
+  }
+  .input-container {
+    flex-direction: column;
+  }
+  form {
+    flex-direction: column;
+  }
+  form input {
+    margin: .5rem 0;
+  }
+  table th {
+    font-size: 16px;
+  }
+  table td {
+    font-size: 16px;
+  }
+  footer {
+    position: relative;
+  }
+}
