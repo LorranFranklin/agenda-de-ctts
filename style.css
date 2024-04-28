@@ -1,15 +1,17 @@
+/* Resetting default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
+/* Removing underline from links */
 a {
   text-decoration: none;
 }
 
 body {
-  background-color: url(./img/backgtound-agenda.jpeg);
+  background-image: url(./img/backgtound-agenda.jpeg);
   background-size: cover;
 }
 
@@ -32,7 +34,6 @@ nav ul li {
   font-weight: bold;
   padding: .5rem;
   cursor: pointer;
-  border-radius: 10px;
   list-style-type: none;
   transition: transform .4s ease;
 }
@@ -41,3 +42,193 @@ nav ul li:hover {
   transform: scale(1.1);
 }
 
+.main-container {
+  display: block;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: #1a1a669f;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.form-container .input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container .input-container input {
+  font-size: 20px;
+  background-color: #ffffffb5;
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container .input-container button {
+  font-size: 24px;
+  background-color: #1a1a66;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.form-container .input-container button:hover {
+  transform: scale(1.1);
+}
+
+p {
+  margin: 1rem auto;
+  font-size: 24px;
+  text-align: center;
+  padding: 1rem;
+  color: red;
+  width: 400px;
+}
+
+.table-container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #1a1a669f;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  color: #fff;
+  border-bottom: 2px solid #000;
+  padding: 1em;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+table td {
+  color: #fff;
+  border-bottom: 2px solid rgba(0,0,0,0.5);
+  padding: 1em 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #1a1a66;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.text-animation {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.text-animation span {
+  position: relative;
+}
+
+.text-animation span:before {
+  content: "Agenda de Contatos";
+  color: #fff;
+  animation: words 20s infinite;
+}
+
+.text-animation span:after {
+  content: "";
+  background-color: #1a1a66;
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid #fff;
+  right: -8px;
+  animation: cursor 0.7s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+    border-left: 3px solid #fff;
+  }
+}
+
+@keyframes words {
+  0%, 
+  20% {
+    content: "Agenda de Contatos";
+  } 
+  21%,
+  40% {
+    content: "Lorran Dev";
+  }
+  41%,
+  60% {
+    content: "Schedule Contact";
+  }
+  61%,
+  80% {
+    content: "Agenda de Contatos";
+  }
+  81%,
+  100% {
+    content: "Lorran Dev";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+  
+}
