@@ -233,7 +233,7 @@ footer {
   
 }
 
-@media (max-width: 660px) {
+@media (max-width: 700px) {
   header {
     justify-content: space-between;
   }
@@ -260,8 +260,5 @@ footer {
   }
   table td {
     font-size: 16px;
-  }
-  footer {
-    position: relative;
   }
 }
