@@ -32,10 +32,10 @@ header img {
 nav ul li {
   font-size: 20px;
   font-weight: bold;
-  padding: .5rem;
+  padding: 0.5rem;
   cursor: pointer;
   list-style-type: none;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
 }
 
 nav ul li:hover {
@@ -71,23 +71,24 @@ form {
 
 .input-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .input-container input {
+  width: 100%;
   font-size: 20px;
   background-color: #ffffffb5;
   padding: 8px 30px;
   border-radius: 5px;
   border: none;
+  margin: 0 1em;
 }
 
 .input-container button {
-  font-size: 24px;
+  font-size: 20px;
   background-color: #1a1a66;
   color: #fff;
   font-weight: bold;
-  padding: 10px;
+  padding: 8px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
@@ -131,13 +132,11 @@ table th {
 
 table td {
   color: #fff;
-  border-bottom: 2px solid rgba(0,0,0,0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   padding: 1em 0;
   font-size: 20px;
   text-align: center;
 }
-
-
 
 footer {
   position: fixed;
@@ -178,16 +177,16 @@ footer {
 }
 
 @keyframes cursor {
-  to{
+  to {
     border-left: 3px solid #fff;
   }
 }
 
 @keyframes words {
-  0%, 
+  0%,
   20% {
     content: "Agenda de Contatos";
-  } 
+  }
   21%,
   40% {
     content: "Lorran Dev";
@@ -230,7 +229,6 @@ footer {
   85% {
     width: calc(100% + 8px);
   }
-  
 }
 
 @media (max-width: 700px) {
@@ -253,7 +251,7 @@ footer {
     flex-direction: column;
   }
   form input {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
   table th {
     font-size: 16px;
