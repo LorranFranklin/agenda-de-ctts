@@ -84,6 +84,9 @@ form {
 }
 
 .input-container button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   font-size: 20px;
   background-color: #1a1a66;
   color: #fff;
