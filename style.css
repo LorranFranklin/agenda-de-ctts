@@ -69,12 +69,12 @@ form {
   color: #fff;
 }
 
-.form-container .input-container {
+.input-container {
   display: flex;
   justify-content: space-between;
 }
 
-.form-container .input-container input {
+.input-container input {
   font-size: 20px;
   background-color: #ffffffb5;
   padding: 8px 30px;
@@ -82,7 +82,7 @@ form {
   border: none;
 }
 
-.form-container .input-container button {
+.input-container button {
   font-size: 24px;
   background-color: #1a1a66;
   color: #fff;
@@ -94,7 +94,7 @@ form {
   transition: transform 1s ease;
 }
 
-.form-container .input-container button:hover {
+.input-container button:hover {
   transform: scale(1.1);
 }
 
