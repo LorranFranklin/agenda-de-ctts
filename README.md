@@ -23,4 +23,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Este é o meu mais novo projeto.
 
-- [Acesse o projeto finalizado, online](https://to-do-list-00.vercel.app/)
+- [Acesse o projeto finalizado, online](https://agenda-de-ctts.vercel.app/#)
